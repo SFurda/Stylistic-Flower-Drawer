@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stylistic Flower Drawer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <h1>Draw a Stylistic Flower</h1>
+    </header>
+    <main id="appContainer">
+        <section id="inputArea" class="shared-area-style">
+            <form>
+                <div>
+                    <label for="petalCount">Number of Petals:</label>
+                    <input type="number" id="petalCount" name="petalCount" min="1" value="5">
+                </div>
+                <div>
+                    <label for="circleSize">Circle Size:</label>
+                    <input type="number" id="circleSize" name="circleSize" min="10" value="50">
+                </div>
+                <button type="button" id="drawButton">Draw Flower</button>
+            </form>
+        </section>
+        <section id="flowerArea" class="shared-area-style">
+            <canvas id="flowerCanvas"></canvas>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>

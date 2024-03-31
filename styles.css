@@ -1,0 +1,71 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+#appContainer {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.shared-area-style {
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+#inputArea {
+    flex: 1;
+    margin-right: 20px; /* Maintain for spacing between areas */
+}
+
+#flowerArea {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+canvas {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Ensures the canvas fits within its container */
+}
+
+input[type="number"], button {
+    padding: 10px;
+    margin: 5px 0; /* Provides vertical spacing */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #5CDB95;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #379683;
+}
+
+#inputArea:after {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 2px;
+    background: #ddd;
+    position: absolute;
+    right: -10px;
+    top: 0;
+}
